@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema elementFormDefault="unqualified" targetNamespace="com.ibm.TransformationAdvisorPattern.pattern" xmlns="com.ibm.TransformationAdvisorPattern.pattern" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:simpleType name="Id1649319b30b34a7d512064e0a97">
+        <xsd:restriction base="xsd:token">
+            <xsd:enumeration value="5061747465726E7321424152">
+                <xsd:annotation>
+                    <xsd:documentation>Broker Archive File (BAR)</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="5061747465726E73214469726563746F7279">
+                <xsd:annotation>
+                    <xsd:documentation>Directory</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="root" type="Root"/>
+    <xsd:complexType name="Root">
+        <xsd:sequence>
+            <xsd:element default="default" maxOccurs="1" minOccurs="1" name="instanceName" type="xsd:string"/>
+            <!-- Analysis Options -->
+            <xsd:element default="" maxOccurs="1" minOccurs="1" name="ppBAR" type="xsd:string"/>
+            <xsd:element default="true" maxOccurs="1" minOccurs="1" name="ppCheckSoftware" type="xsd:boolean"/>
+            <xsd:element default="true" maxOccurs="1" minOccurs="1" name="ppCheckPrivate" type="xsd:boolean"/>
+            <xsd:element default="true" maxOccurs="1" minOccurs="1" name="ppCheckPublic" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

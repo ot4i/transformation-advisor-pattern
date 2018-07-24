@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+    <extension point="org.eclipse.jet.transform">
+        <transform startTemplate="templates/main.jet" templateLoaderClass="org.eclipse.jet.compiled._jet_transformation">
+            <description>%Plugin.description</description>
+            <tagLibraries>
+                <importLibrary autoImport="true"
+                    id="org.eclipse.jet.controlTags" usePrefix="c"/>
+                <importLibrary autoImport="true"
+                    id="org.eclipse.jet.javaTags" usePrefix="java"/>
+                <importLibrary autoImport="true"
+                    id="org.eclipse.jet.formatTags" usePrefix="f"/>
+                <importLibrary autoImport="false"
+                    id="org.eclipse.jet.workspaceTags" usePrefix="ws"/>
+            </tagLibraries>
+        </transform>
+    </extension>
+    <extension point="com.ibm.etools.patterns.Pattern">
+        <resourceloader
+            class="com.ibm.TransformationAdvisorPattern.pattern.PatternMessages" id="com.ibm.TransformationAdvisorPattern.pattern"/>
+        <pattern
+            doc="com.ibm.TransformationAdvisorPattern.doc/pattern/overview.htm"
+            id="com.ibm.TransformationAdvisorPattern.pattern"
+            name="%com.ibm.TransformationAdvisorPattern.pattern.displayName"
+            parentPatternId="categories.Id164cc249d3be38c885467ff243b"
+            povMetaXML="pattern/paramsmeta.xml"
+            povSchema="pattern/params.xsd"
+            povdoc="com.ibm.TransformationAdvisorPattern.doc/pattern/parameters.htm"
+            productId="com.ibm.etools.msgbroker.tooling.ide"
+            resourceLoaderId="com.ibm.TransformationAdvisorPattern.pattern" transformId="com.ibm.TransformationAdvisorPattern"/>
+        <pattern
+            doc="com.ibm.TransformationAdvisorPattern.doc/categories/Id164cc249d3be38c885467ff243b/overview.htm"
+            id="categories.Id164cc249d3be38c885467ff243b"
+            name="%categories.Id164cc249d3be38c885467ff243b.displayName"
+            parentPatternId="com.ibm.etools.pattern" productId="com.ibm.etools.msgbroker.tooling.ide"/>
+    </extension>
+    <extension point="org.eclipse.wst.xml.core.catalogContributions">
+        <catalogContribution id="default">
+            <public
+                publicId="com.ibm.TransformationAdvisorPattern.pattern" uri="pattern/params.xsd"/>
+        </catalogContribution>
+    </extension>
+    <extension id="EditorId164931c35a219a18396b7ef16cb" point="com.ibm.etools.patterns.ui.PatternEditorTypeContributor">
+        <EditorContributor
+            EditorId="EditorId164931c35a219a18396b7ef16cb"
+            EditorImpl="com.ibm.etools.patterns.properties.FilePropertyEditor"
+            argSeparator="," arguments="*"/>
+    </extension>
+</plugin>

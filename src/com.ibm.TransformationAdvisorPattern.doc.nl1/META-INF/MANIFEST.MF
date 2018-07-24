@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NL1 Fragment
+Bundle-SymbolicName: com.ibm.TransformationAdvisorPattern.doc.nl1
+Bundle-Version: 1.0.0.0
+Bundle-Vendor: IBM
+Fragment-Host: com.ibm.TransformationAdvisorPattern.doc;bundle-version="1.0.0.0"

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<povs xmlns:patterns="http://www.ibm.com/patterns">
+    <simplePov
+        groupId="com.ibm.TransformationAdvisorPattern.pattern.instanceName" name="instanceName"/>
+    <simplePov editorId="EditorId164931c35a219a18396b7ef16cb"
+        groupId="com.ibm.TransformationAdvisorPattern.pattern.Id164931d9d29d9b92371a8f73775" name="ppBAR">
+        <action type="custom"/>
+    </simplePov>
+    <simplePov
+        groupId="com.ibm.TransformationAdvisorPattern.pattern.Id164931d9d29d9b92371a8f73775" name="ppCheckSoftware"/>
+    <simplePov
+        groupId="com.ibm.TransformationAdvisorPattern.pattern.Id164931d9d29d9b92371a8f73775" name="ppCheckPrivate"/>
+    <simplePov
+        groupId="com.ibm.TransformationAdvisorPattern.pattern.Id164931d9d29d9b92371a8f73775" name="ppCheckPublic"/>
+    <Group
+        id="com.ibm.TransformationAdvisorPattern.pattern.instanceName" visible="false"/>
+    <Group description="description" expand="false"
+        id="com.ibm.TransformationAdvisorPattern.pattern.Id164931d9d29d9b92371a8f73775"
+        name="Id164931d9d29d9b92371a8f73775" visible="false"/>
+    <ReferencedProject name="_TransformationAdvisor"/>
+</povs>

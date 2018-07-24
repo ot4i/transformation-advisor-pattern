@@ -1,0 +1,2 @@
+<% com.ibm.etools.mft.pattern.support.Generation.onGenerate(context, "com.ibm.TransformationAdvisorPattern", "Id16492efc8ed1be137fffe7c5be4", "Id16492efc8edca178009d6aa18a7", "pattern"); %>
+
